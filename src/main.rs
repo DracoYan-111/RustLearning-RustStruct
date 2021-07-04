@@ -31,3 +31,13 @@ fn build_user(_user_age: u64, _user_name: String) -> User {
         active: true,
     }
 }
+
+//如果字段名与字段值对应变量名相同时，可使用简写的方式
+fn new_user(user_age: u64, user_name: String) -> User {
+
+    User {
+        user_age,
+        user_name,
+        active: true,
+    }
+}
